@@ -11,20 +11,67 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         :root {
-            --primary: red;
+            --primary: #1060b0;
+            --light: #cfdfef;
+            --dark: #062646;
         }
 
         body {
-            margin: 1rem;
-            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', sans-serif;
+            line-height: 1.5;
         }
 
-        h1 {
+        #title {
+            background: var(--primary);
+            padding: 1rem;            
+            color: white;
+            text-align: center;
+        }
+
+        #title a {
+            color: var(--light);
+            text-decoration: none;
+        }
+        
+        #title a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #content {
+            padding: 1rem;
+        }
+
+        #content h2,
+        #content h3 {
             color: var(--primary);
         }
     </style>
 </head>
 <body>
-    <h1>Hier entsteht unsere Pizza-Seite!</h1>
+    <div id="title">
+        <h1>Coding & Pizza</h1>
+        <p>Wie du beim Pizzabacken lernst, Software zu entwickeln</p>
+        <p><a href="https://anmeldung.kinderuni-ooe.at/course/detail/2360">KinderUni</a></p>
+    </div>
+    <div id="content">
+        <h2>Was muss man alles machen, um eine Website zu erstellen?</h2>
+
+        <h3>Planung</h3>
+        <p>Zuerst müssen wir uns überlegen, was unsere Website alles können soll und wie sie aussehen soll. Das ist wie bei einer Pizza. Auch hier müssen wir uns überlegen, was alles auf die Pizza soll.</p>
+
+        <h3>Umsetzung</h3>
+        <p>Wir müssen jetzt unsere Website <b>programmieren</b>. Dabei setzen wir das um, was wir uns in der Planung überlegt hatten. Eine Pizza muss umgesetzt werden. Das bedeutet, dass wir sie mit den geplanten Zutaten belegen müssen.</p>
+
+        <img src="pizza.jpg" alt="Eine Pizza" />
+
+        <h3>Auslieferung</h3>
+        <p>Wenn Pizza und Website fast fertig sind, kommt die <b>Auslieferung</b>. Die Pizza kommt in den Ofen und wird später in der Küche getestet. Die Website müssen wir ins Internet hochladen. Das nennt man <b>Deployen</b>.</p>
+        
+        <h3>Testen</h3>
+        <p>Jetzt überprüfen wir, ob alles so geworden ist, wie wir es geplant haben. In der Softwareentwicklung nennen wir das "Testen". Beim Testen wird nicht nur wild herumprobiert, sondern es wird nach einem Plan vorgegangen.</p>
+    </div>
 </body>
 </html>
